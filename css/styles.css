@@ -1,0 +1,447 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --main-color: #757575;
+  --second-color: #212121;
+  --main-lite-color: #ffffff;
+  --main-dark-color: #000000;
+  --transparant-color: rgba(255, 255, 255, 0.6);
+  --bckg-button-color: #188ce8;
+  --bckg-btn-color: #f5f4fa;
+  --background-section-footer: #2f303a;
+  --border-color: #eeeeee;
+}
+
+body {
+  font-family: var(--main-font), var(--secondary-font);
+  color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============= COMPONENTS ============= */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* ============= END COMPONENTS ============= */
+
+/* ============= HEADER ============= */
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child),
+.contact-list-header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-list-header {
+  display: flex;
+  align-items: center;
+}
+
+.container-header {
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+
+.logo-durk-letters {
+  color: var(--main-dark-color);
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+/* ============= END HEADER ============= */
+
+/* ============= HERO  ============= */
+.modal-btn {
+  font-family: inherit;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--main-lite-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-btn:hover,
+.modal-btn:focus,
+.modal-btn:active {
+  background-color: var(bckg-button-color);
+  color: var(--main-lite-color);
+}
+
+.hero {
+  background: var(--background-section-footer);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-lite-color);
+  margin-bottom: 30px;
+  padding-right: 252px;
+  padding-left: 252px;
+}
+/* ============= END HERO  ============= */
+
+/* ============= About US  ============= */
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-dscrptn {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.about-list-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+  margin-bottom: 10px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.about-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* ============= END About US  ============= */
+
+/* ============= Our occupation  ============= */
+.occupation {
+  padding-bottom: 94px;
+}
+
+.occupation-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+  margin-bottom: 50px;
+}
+
+.occupation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.occupation-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* ============= END Our occupation  ============= */
+
+/* ============= Development team ============= */
+.development-team {
+  background-color: var(--bckg-btn-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.title-development-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+  margin-bottom: 50px;
+}
+
+.title-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
+.development-dscrptn {
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.development-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.development-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.development-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--main-lite-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* ============= END Development team  ============= */
+
+/* ============= PORTFOLIO  ============= */
+/* ============= single section ============= */
+
+.portfolio-btn {
+  font-family: inherit;
+  border: 1px solid var(--bckg-btn-color);
+  min-width: 128px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  cursor: pointer;
+  color: var(--second-color);
+  background: var(--bckg-btn-color);
+  border-radius: 4px;
+}
+
+.first-btn {
+  min-width: 73px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--main-lite-color);
+}
+
+.portfolio-btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.portfolio-btn-list-item {
+}
+
+.portfolio-btn-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.title-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-color);
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  padding-bottom: 94px;
+}
+
+.portfolio-cards-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.portfolio-cards-list-wrapper {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+.description {
+  margin-top: 4px;
+}
+
+/* ============= END PORTFOLIO  ============= */
+
+/* ============= FOOTER LOGO-CONTACT INFORMATION ============= */
+
+footer {
+  background: var(--background-section-footer);
+}
+
+.logo-light-letters {
+  color: var(--main-lite-color);
+}
+
+.contact-list-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--transparant-color);
+}
+
+.contact-list-link-address {
+  color: var(--main-lite-color);
+}
+
+.contact-list-link:hover,
+.сontact-list-link:focus,
+.contact-list-link:hover,
+.сontact-list-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact-list {
+  margin-top: 20px;
+}
+
+.contact-list-item {
+  margin-top: 9px;
+}
+
+/* ============= END FOOTER CONTACT INFORMATION ============= */
