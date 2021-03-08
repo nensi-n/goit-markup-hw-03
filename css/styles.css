@@ -11,6 +11,7 @@
   --bckg-btn-color: #f5f4fa;
   --background-section-footer: #2f303a;
   --border-color: #eeeeee;
+  --border-header: #ececec;
 }
 
 body {
@@ -73,13 +74,13 @@ img {
 /* ============= HEADER ============= */
 
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  border-bottom: 1px solid var(--border-header);
 }
 
-.header .container {
+.header > .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -90,6 +91,8 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation-item:not(:last-child),
@@ -100,10 +103,8 @@ img {
 .contact-list-header {
   display: flex;
   align-items: center;
-}
-
-.container-header {
-  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
@@ -114,6 +115,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-durk-letters {
@@ -189,9 +192,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-lite-color);
-  margin-bottom: 30px;
-  padding-right: 252px;
-  padding-left: 252px;
+  width: 696px;
+  margin: 0 auto 30px;
 }
 /* ============= END HERO  ============= */
 
@@ -298,7 +300,6 @@ img {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding-bottom: 94px;
   text-align: center;
 }
 
@@ -325,7 +326,6 @@ img {
 .portfolio-btn {
   font-family: inherit;
   border: 1px solid var(--bckg-btn-color);
-  min-width: 128px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -335,10 +335,6 @@ img {
   color: var(--second-color);
   background: var(--bckg-btn-color);
   border-radius: 4px;
-}
-
-.first-btn {
-  min-width: 73px;
 }
 
 .portfolio-btn:hover,
@@ -352,10 +348,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 94px;
-  margin-bottom: 50px;
-}
-
-.portfolio-btn-list-item {
 }
 
 .portfolio-btn-list-item:not(:last-child) {
@@ -383,6 +375,7 @@ img {
   margin-left: -30px;
   margin-top: -30px;
   padding-bottom: 94px;
+  margin-top: 50px;
 }
 
 .portfolio-cards-list-item {
@@ -431,7 +424,7 @@ footer {
   color: var(--accent-color);
 }
 
-.footer-container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
